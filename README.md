@@ -1,6 +1,6 @@
 # NovaChat
 
-NovaChat is a modern AI chatbot inspired by ChatGPT, built using Node.js, Express, Gemini API, HTML, CSS, and JavaScript.
+NovaChat is a modern AI chatbot inspired by ChatGPT, built using Node.js, Express.js, Gemini API, HTML, CSS, and JavaScript.
 
 ---
 
@@ -8,11 +8,13 @@ NovaChat is a modern AI chatbot inspired by ChatGPT, built using Node.js, Expres
 
 - 🤖 AI-powered conversations
 - 🌑 Premium dark futuristic UI
-- 📝 Markdown formatted responses
-- ⚡ Fast Gemini 3.5 Flash integration
-- 📱 Responsive design
+- 📝 Markdown formatted AI responses
+- ⚡ Gemini 3.5 Flash integration
+- 📱 Fully responsive design
 - 💬 ChatGPT-inspired interface
 - 🎨 Smooth animations and gradients
+- 🧠 Conversational AI behavior
+- 🗂️ Interactive sidebar UI
 
 ---
 
@@ -24,6 +26,7 @@ NovaChat is a modern AI chatbot inspired by ChatGPT, built using Node.js, Expres
 - Node.js
 - Express.js
 - Gemini API
+- Marked.js
 
 ---
 
@@ -31,11 +34,11 @@ NovaChat is a modern AI chatbot inspired by ChatGPT, built using Node.js, Expres
 
 ```bash
 NovaChat/
-├── public/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
+├── index.html
+├── style.css
+├── script.js
 ├── server.js
+├── vercel.json
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
@@ -96,24 +99,37 @@ http://localhost:3000
 
 ---
 
-## 📸 Preview
+## 🌐 Deployment
 
-NovaChat features:
+NovaChat is deployed using:
 
-- modern dark UI
-- sidebar navigation
-- markdown AI responses
-- responsive chat interface
-- premium gradient styling
+- Vercel
+
+Deployment includes:
+- Express backend
+- Gemini API integration
+- Environment variable configuration
+- Static frontend hosting
+
+---
+
+## 📸 UI Highlights
+
+- Modern black premium UI
+- Purple-blue gradients
+- Sidebar navigation
+- Markdown AI rendering
+- Responsive chat layout
+- Smooth hover animations
 
 ---
 
 ## 🔮 Future Improvements
 
 - Chat history
-- Authentication
+- Authentication system
 - Database integration
-- Typing animations
+- AI typing animation
 - Voice assistant
 - Multiple chat sessions
 - AI memory support
