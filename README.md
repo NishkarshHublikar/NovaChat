@@ -34,15 +34,14 @@ NovaChat is a modern AI chatbot inspired by ChatGPT, built using Node.js, Expres
 
 ```bash
 NovaChat/
-├── index.html
-├── style.css
-├── script.js
+├── public/
+│   ├── style.css
+│   └── script.js
+├── views/
+│   └── index.html
 ├── server.js
 ├── vercel.json
 ├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
 ```
 
 ---
