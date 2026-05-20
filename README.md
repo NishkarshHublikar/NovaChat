@@ -40,63 +40,95 @@ NovaChat/
 ├── package-lock.json
 ├── .gitignore
 └── README.md
-🚀 Installation
+```
+
+---
+
+## 🚀 Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/NishkarshHublikar/NovaChat.git
+```
 
 Move into the project folder:
 
+```bash
 cd NovaChat
+```
 
 Install dependencies:
 
+```bash
 npm install
-🔑 Environment Variables
+```
 
-Create a .env file in the root folder:
+---
 
+## 🔑 Environment Variables
+
+Create a `.env` file in the root folder:
+
+```env
 GEMINI_API_KEY=your_api_key_here
+```
 
 Get your Gemini API key from:
 
 https://aistudio.google.com/app/apikey
 
-▶️ Run Locally
+---
+
+## ▶️ Run Locally
 
 Start the server:
 
+```bash
 node server.js
+```
 
 Open in browser:
 
+```bash
 http://localhost:3000
-📸 Preview
+```
+
+---
+
+## 📸 Preview
 
 NovaChat features:
 
-modern dark UI
-sidebar navigation
-markdown AI responses
-responsive chat interface
-premium gradient styling
-🔮 Future Improvements
-Chat history
-Authentication
-Database integration
-Typing animations
-Voice assistant
-Multiple chat sessions
-AI memory support
+- modern dark UI
+- sidebar navigation
+- markdown AI responses
+- responsive chat interface
+- premium gradient styling
 
-👨‍💻 Author
+---
 
-Nishkarsh Hublikar
+## 🔮 Future Improvements
 
-GitHub:
+- Chat history
+- Authentication
+- Database integration
+- Typing animations
+- Voice assistant
+- Multiple chat sessions
+- AI memory support
+
+---
+
+## 👨‍💻 Author
+
+**Nishkarsh Hublikar**
+
+GitHub:  
 https://github.com/NishkarshHublikar
 
-⭐ Support
+---
+
+## ⭐ Support
 
 If you liked this project, consider giving it a star ⭐ on GitHub.
