@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+
+  background:
+  radial-gradient(circle at top right,#111827,#000000 60%);
+
+  color:white;
+
+  height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  overflow:hidden;
+}
+
+.container{
+  width:96%;
+  height:94vh;
+
+  display:flex;
+
+  background:rgba(255,255,255,0.03);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:28px;
+
+  overflow:hidden;
+
+  backdrop-filter:blur(20px);
+
+  box-shadow:
+  0 0 40px rgba(0,0,0,0.7);
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  width:280px;
+
+  background:#050505;
+
+  border-right:1px solid rgba(255,255,255,0.05);
+
+  padding:24px;
+
+  display:flex;
+  flex-direction:column;
+}
+
+.logo{
+  font-size:42px;
+  font-weight:700;
+
+  margin-bottom:30px;
+
+  background:linear-gradient(
+    to right,
+    #ffffff,
+    #9333ea
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.new-chat{
+  padding:16px;
+
+  border:none;
+
+  border-radius:18px;
+
+  background:linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  color:white;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.new-chat:hover{
+  transform:translateY(-2px);
+}
+
+.chat-history{
+  margin-top:30px;
+
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.chat-item{
+  background:#111111;
+
+  padding:16px;
+
+  border-radius:16px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.chat-item:hover{
+  background:#1b1b1b;
+  transform:translateX(4px);
+}
+
+/* MAIN */
+
+.main{
+  flex:1;
+
+  display:flex;
+  flex-direction:column;
+
+  padding:30px;
+
+  background:
+  radial-gradient(circle at bottom right,
+  rgba(124,58,237,0.15),
+  transparent 30%);
+}
+
+.top-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:20px;
+}
+
+.title{
+  font-size:42px;
+  font-weight:700;
+}
+
+.status{
+  color:#4ade80;
+}
+
+/* CHAT */
+
+#chat-box{
+  flex:1;
+
+  overflow-y:auto;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:18px;
+
+  padding-right:10px;
+}
+
+.message{
+  max-width:75%;
+
+  padding:18px 22px;
+
+  border-radius:20px;
+
+  line-height:1.6;
+
+  animation:fadeIn 0.3s ease;
+}
+
+.user{
+  align-self:flex-end;
+
+  background:linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  border-bottom-right-radius:4px;
+}
+
+.bot{
+  align-self:flex-start;
+
+  background:#111111;
+
+  border:1px solid rgba(255,255,255,0.05);
+
+  border-bottom-left-radius:4px;
+}
+
+/* INPUT */
+
+.input-area{
+  margin-top:20px;
+
+  display:flex;
+  gap:14px;
+
+  background:#0a0a0a;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  padding:14px;
+
+  border-radius:22px;
+}
+
+input{
+  flex:1;
+
+  background:transparent;
+
+  border:none;
+  outline:none;
+
+  color:white;
+
+  font-size:16px;
+}
+
+input::placeholder{
+  color:#777;
+}
+
+button{
+  border:none;
+
+  background:linear-gradient(
+    to right,
+    #7c3aed,
+    #2563eb
+  );
+
+  color:white;
+
+  padding:14px 24px;
+
+  border-radius:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+/* SCROLLBAR */
+
+#chat-box::-webkit-scrollbar{
+  width:8px;
+}
+
+#chat-box::-webkit-scrollbar-thumb{
+  background:#222;
+  border-radius:10px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .sidebar{
+    display:none;
+  }
+
+  .container{
+    width:100%;
+    height:100vh;
+
+    border-radius:0;
+  }
+
+  .message{
+    max-width:90%;
+  }
+
+}
+/* MARKDOWN STYLING */
+
+.bot h1{
+  font-size:32px;
+  margin-bottom:14px;
+}
+
+.bot h2{
+  font-size:26px;
+  margin-bottom:12px;
+}
+
+.bot h3{
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.bot p{
+  margin-bottom:12px;
+  color:#e5e7eb;
+}
+
+.bot ul,
+.bot ol{
+  padding-left:22px;
+  margin-bottom:14px;
+}
+
+.bot li{
+  margin-bottom:8px;
+}
+
+.bot strong{
+  color:white;
+}
+
+.bot code{
+  background:#1f1f1f;
+
+  padding:3px 7px;
+
+  border-radius:6px;
+
+  color:#c084fc;
+}
+
+.bot pre{
+  background:#111111;
+
+  padding:16px;
+
+  border-radius:14px;
+
+  overflow-x:auto;
+
+  margin-top:12px;
+}

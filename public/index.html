@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>NovaChat</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+
+    <div class="logo">
+      NovaChat
+    </div>
+
+    <button class="new-chat">
+      + New Chat
+    </button>
+
+    <div class="chat-history">
+
+      <div class="chat-item">
+        AI Conversation
+      </div>
+
+      <div class="chat-item">
+        Coding Help
+      </div>
+
+      <div class="chat-item">
+        Random Ideas
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="main">
+
+    <div class="top-bar">
+
+      <div class="title">
+        NovaChat AI
+      </div>
+
+      <div class="status">
+        ● Online
+      </div>
+
+    </div>
+
+    <div id="chat-box"></div>
+
+    <div class="input-area">
+
+      <input
+        type="text"
+        id="message"
+        placeholder="Ask NovaChat anything..."
+      />
+
+      <button onclick="sendMessage()">
+        Send
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
